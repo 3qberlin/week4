@@ -1,0 +1,38 @@
+.text- {
+  &pink {
+    color: #fbf2f2;
+  }
+  &red {
+    color: #aa0601;
+  }
+  &black {
+    color: #000000;
+  }
+  &white {
+    color: #ffffff;
+  }
+  &brown {
+    color: #5f3e2d;
+  }
+  &gray{
+    color:#555555;
+  }
+}
+
+.bg-color- {
+  &red {
+    background-color: #aa0601;
+  }
+  &black {
+    background-color: black;
+  }
+  &darkBrown {
+    background-color: #5F3E2D;
+  }
+  &brown {
+    background-color: #B75929;
+  }
+  &gray{
+    background-color: #F2F2F2;
+  }
+}

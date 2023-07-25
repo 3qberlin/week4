@@ -1,0 +1,97 @@
+// space
+$web: 1140px;
+$tablet:992px;
+$phone:768px;
+$small:375px;
+
+@mixin rwd($small) {
+  @media (min-width: $small) {
+    @content;
+  }
+  @media (min-width: $phone){
+    @content;
+  }
+  @media (min-width: $tablet) {
+    @content;
+  }
+  @media (min-width: $web) {
+    @content;
+  }
+}
+
+.product-items li {
+    @include rwd($small) {
+        width: 47%;
+        margin: 0 auto;
+    }
+}
+
+.product-items li {
+    @include rwd($phone) {
+        width: 47%;
+    }
+}
+
+.product-items li {
+  @include rwd($tablet) {
+      width: 23%;
+  }
+}
+
+.banner .phone{
+  display:block;
+  @include rwd($phone){
+    display:none;
+  }
+}
+
+.banner .web{
+  display:none;
+  @include rwd($phone){
+    display:block;
+  }
+}
+
+
+
+.header ul li a{
+  @include rwd($small){
+    margin-left:36px;
+  }
+  @include rwd($phone){
+    margin-left:64px;
+  }
+}
+
+.footer ul li a{
+  @include rwd($small){
+    margin-right:26px;
+  }
+  @include rwd($phone){
+    margin-right:48px;
+  }
+}
+
+.footerNav ul li a{
+  @include rwd($small){
+    margin-right:24px;
+    // color:red;
+  }
+  @include rwd($tablet){
+    margin-right:48px;
+  }
+}
+
+.footerNav ul img{
+  @include rwd($phone){
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.footerIcons {
+  gap:12px;
+  @include rwd($phone){
+    gap:36px;
+  }
+}
