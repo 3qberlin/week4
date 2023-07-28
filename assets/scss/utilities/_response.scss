@@ -120,6 +120,21 @@ $small: 375px;
   margin-right: 12px;
 }
 
+.headerMobile{
+  display:block;
+  @include rwd($phone){
+    display:none;
+  }
+}
+
+.header ul {
+  display:none;
+  @include rwd($phone){
+    display:block;
+    display:flex;
+  }
+}
+
 .option a {
   font-size: $s18;
   @include rwd($phone) {
@@ -217,5 +232,43 @@ footer .copyright {
   font-size: 30px;
   @include rwd($phone) {
     font-size: 36px;
+  }
+}
+
+// .footerNav .menu, .footerTel, .footerEmail {
+//   display:none;
+//   @include rwd($phone){
+//     display:block;
+//     display:flex;    
+//   }
+// }
+
+// .footerIcons{
+//   @include rwd($small){
+//     justify-content: flex-end;
+//     width: 100%;
+//   }
+// }
+
+.menu {
+  display:none;
+  @include rwd($phone){
+    display:block;
+    display:flex;
+  }
+}
+
+.content{
+  display:block;
+  @include rwd($phone){
+    display:none;
+  }
+}
+
+.rwd{
+  display:none;
+  @include rwd($phone){
+    display:block;
+    // display:flex;
   }
 }
