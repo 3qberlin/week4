@@ -31,6 +31,11 @@ $small: 375px;
   }
 }
 
+.product img{
+  margin:0 auto;
+  width: 100%;;
+}
+
 .banner .phone {
   display: block;
   @include rwd($phone) {
