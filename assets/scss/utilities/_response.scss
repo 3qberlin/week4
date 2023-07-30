@@ -317,9 +317,9 @@ footer .copyright {
 .sunGlass li {
 width:100%;
 margin:0 auto;
-@include rwd($small){
-  width:45%;
-}
+// @include rwd($small){
+//   width:45%;
+// }
 @include rwd($web){
   width: 31%;
 }
@@ -419,9 +419,9 @@ margin:0 auto;
   width: 100%;
   margin:0 auto;
   
-  @include rwd($small){
-    width:48%;
-  }
+  // @include rwd($small){
+  //   width:48%;
+  // }
   @include rwd($phone){
     width: 31%;
     
